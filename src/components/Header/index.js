@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from "react-router-dom"
+import { useSelector } from 'react-redux';
 
-import { Container } from './styles';
+import { Container, Dot } from './styles';
 import { FiShoppingCart } from "react-icons/fi"
 
 function Header() {
+  const count = useSelector(state => state.count);
+  
   return (
       <Container>
           <h1>ShoeComerce</h1>
@@ -13,6 +16,7 @@ function Header() {
               <Link to="/">Home</Link>
               <li>Product</li>
               <Link to="/cart">
+                  <Dot>{count}</Dot>
                   Cart
                   <FiShoppingCart />
               </Link>
