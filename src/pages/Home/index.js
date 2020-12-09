@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 
 import { Container, Cards } from './styles';
 import Card from "../../components/Card"
@@ -15,16 +15,15 @@ import nike from "../../images/nike.svg"
 import puma from "../../images/puma.svg"
 
 function Home() {
-  const [response, setResponse] = React.useState([])
+  const [response, setResponse] = useState([])
 
   const images = [ airmax, sakura, yeezy ]
   const logo = [ nike, adidas, puma]
 
-  React.useEffect(() => {
+
+  useEffect(() => {
     async function getApi(){
       const { data } = await axios.get('http://localhost:3000/products')
-
-      console.log(data)
 
       setResponse(data)
     }
@@ -40,7 +39,7 @@ function Home() {
               <Card title={product.title} shoe={images[product.id]} 
               logo={logo[product.id]} color={product.color} 
               description={product.description} brand={product.brand}
-              key={product.id} id={product.id}
+              key={product.id} id={product.id} price={product.price}
               />
             ))}
           </Cards>
