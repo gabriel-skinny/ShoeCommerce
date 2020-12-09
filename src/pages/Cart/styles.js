@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   background: #fff;
-  height: 600px;
   width: 1000px;
+  min-height: 600px;
   margin: auto;
   margin-top: 50px;
-
+  padding: 10px 0 20px; 
 
   tr{
       display: flex;
@@ -46,13 +46,18 @@ export const Container = styled.div`
               }
           }
 
-          svg{
-            width: 50px;
-            transition: 0.3s;
+          button{
+              background: none;
+              border: 0;
+              
+              svg{
+                width: 50px;
+                transition: 0.3s;
 
-            &:hover{
-                opacity: 0.3;
-            }
+                &:hover{
+                    opacity: 0.3;
+                }
+          }
           }
       }
 
@@ -64,6 +69,7 @@ export const Container = styled.div`
 export const Footer = styled.footer`
     display: flex;
     justify-content: space-between;
+    align-self: flex-end;
     align-items: center;
     margin-top: 20px;
 
