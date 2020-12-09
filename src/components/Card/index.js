@@ -1,9 +1,16 @@
 import React from 'react';
 
 import { Container, Shoe, Description, Cards } from './styles';
-
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../../store/actions'
 
 function Card(props) {
+  const dispatch = useDispatch();
+
+  function handleSubmit(data){
+    dispatch(addToCart(data))
+  }
+
   return (
     <Container>
         <h1 className={props.color}>PANTONE 7743C</h1>
@@ -23,7 +30,7 @@ function Card(props) {
 
                 <p>{props.description}</p>
 
-                <button className={props.color}>$220- ADD TO CART</button>
+                <button onClick={() => handleSubmit(props)} className={props.color}>${props.price} ADD TO CART</button>
             </Description> 
         </Cards>
     </Container>
