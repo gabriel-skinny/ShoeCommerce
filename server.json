@@ -3,7 +3,7 @@
         "id":0,
         "title": "AirMax",
         "brand": "NIKE",
-        "price": " 178,90R$",
+        "price": 178.90,
         "image": "https://images.lojanike.com.br/1024x1024/produto/217356_1976188_20200218152702.jpg",
         "color": "red",
         "description": "The Infrared colorway is without any doubt one of the most iconic in the Nike Air Max history."
@@ -13,7 +13,7 @@
         "id":1,
         "title": "Sakura R689",
         "brand": "ADIDAS",
-        "price": " 248,90R$",
+        "price": 248.90,
         "image": "https://images.lojanike.com.br/1024x1024/produto/217356_1976188_20200218152702.jpg",
         "color": "purple",
         "description": "Ronnie Fieg partners with Puma to redesign the R689. Inpired by Japanese sakura blossoms."
@@ -23,7 +23,7 @@
         "id":2,
         "title": "Yeezy Boost 350",
         "brand": "PUMA",
-        "price": " 378,90R$",
+        "price": 378.90,
         "image": "https://github.com/DaniloLima122/interfaces-clone/blob/master/Card-shop/img/sakura.png",
         "color": "cyan",
         "description": "The low-top YEEZY BOOST 350 int tan features an upper composed of tornal Primeknit."
