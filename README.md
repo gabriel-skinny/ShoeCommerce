@@ -8,4 +8,7 @@ Um e-commerce de venda de tenis feito com React e Redux
 - Styled-Components
 - Json Server
 - Axios
+- Redux
+- React-Redux
+- Immer
 
