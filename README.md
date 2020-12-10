@@ -1,5 +1,5 @@
 # ShoeCommerce
-Um e-commerce de venda de tenis
+Um e-commerce de venda de tenis feito com React e Redux
 
 
 ## Techs
