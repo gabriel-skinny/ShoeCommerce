@@ -2,7 +2,7 @@
 Um e-commerce de venda de tenis feito com React e Redux
 
 
-## Techs
+## :rocket: Tecnologias
 
 - ReactJS
 - Styled-Components
